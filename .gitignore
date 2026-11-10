@@ -5,6 +5,7 @@
 /phonon/phonon-test/Logs/
 /phonon/phonon-test/models/
 /phonon-core/target/
+/phonon/cmake-build/
 **/xcuserdata/
 .DS_Store
 

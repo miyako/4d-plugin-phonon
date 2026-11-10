@@ -155,3 +155,6 @@ target_include_directories(${PLUGIN_NAME} PRIVATE "${SDK_DIR}" "${CMAKE_CURRENT_
 set_source_files_properties("${SDK_DIR}/4DPluginAPI.c" PROPERTIES LANGUAGE CXX)
 target_compile_definitions(${PLUGIN_NAME} PRIVATE UNICODE _UNICODE
     PHONON_PLUGIN_VERSION="${PLUGIN_VERSION}")
+if(WIN32)
+    target_compile_definitions(${PLUGIN_NAME} PRIVATE NOMINMAX _CRT_SECURE_NO_WARNINGS)
+endif()

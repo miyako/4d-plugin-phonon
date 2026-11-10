@@ -683,7 +683,13 @@ static void Phonon_Load_models(PA_PluginParameters params) {
     }
     // Load in parallel: each model loads independently.
     std::vector<std::thread> threads;
-    for (auto &r : requests) threads.emplace_back(load_one, std::ref(r));
+    size_t started = 0;
+    try {
+        for (; started < requests.size(); ++started) threads.emplace_back(load_one, std::ref(requests[started]));
+    } catch (...) {
+        // No more threads: load the rest here.
+    }
+    for (size_t i = started; i < requests.size(); ++i) load_one(requests[i]);
     for (auto &t : threads) t.join();
 
     PA_CollectionRef out = PA_CreateCollection();

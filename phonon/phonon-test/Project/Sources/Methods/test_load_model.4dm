@@ -36,6 +36,18 @@ ASSERT(Phonon Get model info($model).voices.indexOf("copy")#-1)
 Phonon ADD VOICE($model; "missing"; $path+"missing.safetensors")
 ASSERT(Phonon Get last error#"")
 
+// conditions (speaking rate) and extra voice files
+var $slow : Integer
+$slow:=Phonon Load model($path; {conditions: {duration_delta: 0.3}; voices: [{name: "extra"; path: $path+"default-voice.safetensors"}]; voice: "extra"})
+ASSERT($slow>0; Phonon Get last error)
+$info:=Phonon Get model info($slow)
+ASSERT($info.voice="extra")
+ASSERT($info.voices.indexOf("extra")#-1)
+Phonon UNLOAD MODEL($slow)
+ASSERT(Phonon Load model($path; {voices: [{name: "missing"; path: $path+"missing.safetensors"}]})=0)
+ASSERT(Phonon Load model($path; {seed: -1})=0)
+ASSERT(Phonon Get last error="@invalid options@"; Phonon Get last error)
+
 /*
 	On macOS, a system (HFS) path is accepted too.
 */
