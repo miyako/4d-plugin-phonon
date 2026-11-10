@@ -1,0 +1,19 @@
+{
+	"Tests": {
+		"methods": [
+			"phonon_test_model",
+			"phonon_test_wait",
+			"test_all",
+			"test_info",
+			"test_load_model",
+			"test_load_models",
+			"test_pause",
+			"test_play",
+			"test_play_device",
+			"test_play_file",
+			"test_play_multiple",
+			"test_synthesize"
+		]
+	},
+	"trash": {}
+}

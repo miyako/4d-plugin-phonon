@@ -1,0 +1,116 @@
+{
+    "name": "phonon",
+    "id": 31150,
+    "commands": [
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon Load model(&T;&J):L",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon Load models(&C):C",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon UNLOAD MODEL(&L)",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon Get models:C",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon Get model info(&L):J",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon ADD VOICE(&L;&T;&T)",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon Play(&L;&T;&J):L",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon Play multiple(&C;&J):C",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon PAUSE(&L)",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon RESUME(&L)",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon STOP(&L)",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon Get status(&L):J",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon Get statuses(&C):C",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon PAUSE ALL",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon RESUME ALL",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon STOP ALL",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon SET VOLUME(&L;&8)",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon Synthesize(&L;&T;&J):O",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon Get last error:T",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon SET THREADS(&L)",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon Get info:J",
+            "threadSafe": true
+        },
+        {
+            "theme": "Phonon",
+            "syntax": "Phonon UNLOAD ALL",
+            "threadSafe": true
+        }
+    ]
+}

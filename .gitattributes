@@ -1,0 +1,7 @@
+# BEGIN 4D PLUGIN PIPELINE (managed)
+phonon/manifest.json text eol=lf
+phonon/constants.xlf text eol=lf
+VERSION text eol=lf
+LICENSE text eol=lf
+THIRD-PARTY-NOTICES/** text eol=lf
+# END 4D PLUGIN PIPELINE (managed)

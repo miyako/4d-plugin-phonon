@@ -1,0 +1,28 @@
+[package]
+name = "phonon-core"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Static C interface to the Phonon text-to-speech CPU engine, for the 4D plugin"
+license = "MIT"
+
+[lib]
+crate-type = ["staticlib"]
+path = "src/lib.rs"
+
+[dependencies]
+# Pinned to an exact release; Cargo.lock pins the rest of the closure.
+ptts = { version = "=0.7.0", default-features = false, features = ["hf"] }
+# The tensor library ptts runs on; only its thread-count setting is used here.
+xn = "=0.2.14"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+# Unwinding across the C boundary aborts; every entry point catches panics itself.
+panic = "unwind"
+lto = "thin"
+codegen-units = 4
+opt-level = 3
+debug = false
+strip = "debuginfo"

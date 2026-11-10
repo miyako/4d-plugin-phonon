@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+<header>
+    <note>phonon</note>
+</header>
+<group resname="themes">
+    <trans-unit id="phonon" resname="phonon" translate="no">
+        <source>Phonon</source>
+    </trans-unit>
+</group>
+<group restype="x-4DK#" d4:groupName="phonon">
+    <trans-unit d4:value="pending:S" id="phonon_1">
+        <source>Phonon state pending</source>
+    </trans-unit>
+    <trans-unit d4:value="playing:S" id="phonon_2">
+        <source>Phonon state playing</source>
+    </trans-unit>
+    <trans-unit d4:value="paused:S" id="phonon_3">
+        <source>Phonon state paused</source>
+    </trans-unit>
+    <trans-unit d4:value="finished:S" id="phonon_4">
+        <source>Phonon state finished</source>
+    </trans-unit>
+    <trans-unit d4:value="error:S" id="phonon_5">
+        <source>Phonon state error</source>
+    </trans-unit>
+    <trans-unit d4:value="unknown:S" id="phonon_6">
+        <source>Phonon state unknown</source>
+    </trans-unit>
+    <trans-unit d4:value="default:S" id="phonon_7">
+        <source>Phonon output default</source>
+    </trans-unit>
+    <trans-unit d4:value="none:S" id="phonon_8">
+        <source>Phonon output none</source>
+    </trans-unit>
+</group>
+</xliff>

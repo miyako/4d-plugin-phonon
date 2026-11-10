@@ -1,0 +1,25 @@
+# phonon
+/phonon/phonon-test/Data/
+/phonon/phonon-test/Project/DerivedData/
+/phonon/phonon-test/userPreferences.*/
+/phonon/phonon-test/Logs/
+/phonon/phonon-test/models/
+/phonon-core/target/
+**/xcuserdata/
+.DS_Store
+
+# BEGIN 4D PLUGIN PIPELINE (managed)
+/phonon/build/
+/phonon/phonon-test/Plugins/
+/.local-tools/
+/.package-inputs/
+/.package-validation/
+/.release-package/
+/.signed-distribution/
+/.signed-extracted/
+/.publish-extracted/
+/.draft-upload-check/
+/.draft-extracted/
+/.release-notes
+__pycache__/
+# END 4D PLUGIN PIPELINE (managed)

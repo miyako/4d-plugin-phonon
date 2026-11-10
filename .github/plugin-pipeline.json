@@ -1,0 +1,38 @@
+{
+  "build_dir": "phonon/build",
+  "bundle_identifier": "com.4d.phonon",
+  "dependencies": {
+    "allowed_licenses": [
+      "Apache-2.0",
+      "MIT",
+      "Unicode-3.0",
+      "Zlib"
+    ],
+    "components": {
+      "phonon-core": {
+        "license": "Apache-2.0 AND MIT AND Unicode-3.0 AND Zlib",
+        "notice": "phonon-core.txt",
+        "platforms": [
+          "macos",
+          "windows"
+        ]
+      }
+    },
+    "copyleft_acknowledged": [],
+    "notices_dir": "THIRD-PARTY-NOTICES",
+    "profile": "static",
+    "windows": "none"
+  },
+  "macos_deployment_target": "11.0",
+  "native_tests": false,
+  "product": "phonon",
+  "profile": "macos-universal-windows-x64",
+  "release_branch": "main",
+  "schema": 1,
+  "sdk_dir": "4D-Plugin-SDK",
+  "signing_environment": "release-signing",
+  "signing_policy": "developer-id",
+  "source_dir": "phonon",
+  "startup_method": "test_all",
+  "test_project": "phonon/phonon-test/Project/phonon.4DProject"
+}
