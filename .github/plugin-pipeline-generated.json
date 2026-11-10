@@ -7,7 +7,7 @@
     ".github/plugin-pipeline-contract.json": "4f4ed1e7441d56c5634b312cf3cf537e1ed36d4b3fe81e42c520d994ca40d0b7",
     ".github/plugin-pipeline.json": "db25b037f1396527559a3f84c4082f038caee5bb3e9a2e4a3ee045d263f42a15",
     ".github/workflows/bump-version.yml": "61c087c63888e475986bf9d0af8c251107e975ed42724c3fb80d5d38be5adb54",
-    ".github/workflows/release.yml": "19e1a06ca117eb6f70a7009fb5ccef9eda766fd8bc493191890efff1f22dc897",
+    ".github/workflows/release.yml": "10e04989b3288632b6cf90c8a46c390e756eec0b109c24f2f329bf86e703e57f",
     ".github/workflows/test.yml": "392cae315ba2c3195d01af74b42455b59ed5c8721b9a46ba621919fcb1e97d03",
     ".gitignore": "8521e19d1cfcc9d8a6869df9d88965c6e6ca952ac4adbb0a1be5325441e0cca5",
     "scripts/PIPELINE-LICENSE.txt": "175cd6137569620511706709ace1afe98a52c5e6c23ce92b7b2318ab4a6819c5",
