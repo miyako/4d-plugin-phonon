@@ -1,11 +1,31 @@
-# Check out text with LF on every platform: the pipeline ownership check hashes
-# generated files byte for byte, and Windows runners would otherwise convert to CRLF.
-* text=auto eol=lf
-
 # BEGIN 4D PLUGIN PIPELINE (managed)
 phonon/manifest.json text eol=lf
 phonon/constants.xlf text eol=lf
 VERSION text eol=lf
 LICENSE text eol=lf
 THIRD-PARTY-NOTICES/** text eol=lf
+.gitattributes text eol=lf
+.github/actions/tool4d-test/action.yml text eol=lf
+.github/plugin-pipeline-contract.json text eol=lf
+.github/plugin-pipeline-generated.json text eol=lf
+.github/plugin-pipeline.json text eol=lf
+.github/workflows/bump-version.yml text eol=lf
+.github/workflows/release.yml text eol=lf
+.github/workflows/test.yml text eol=lf
+.gitignore text eol=lf
+scripts/PIPELINE-LICENSE.txt text eol=lf
+scripts/check_pipeline.py text eol=lf
+scripts/package.py text eol=lf
+scripts/publish_release.py text eol=lf
+scripts/release_checks.py text eol=lf
+scripts/sign-package.sh text eol=lf
+scripts/tests/test_package.py text eol=lf
+scripts/tests/test_pipeline_contract.py text eol=lf
+scripts/tests/test_publish_release.py text eol=lf
+scripts/tests/test_release_checks.py text eol=lf
+scripts/tests/test_sign_package.py text eol=lf
+scripts/tests/test_verify_release.py text eol=lf
+scripts/verify_distribution.py text eol=lf
+scripts/verify_release.py text eol=lf
+templates/plugin-pipeline/REFERENCE.txt text eol=lf
 # END 4D PLUGIN PIPELINE (managed)
